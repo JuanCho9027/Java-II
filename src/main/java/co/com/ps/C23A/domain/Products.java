@@ -1,5 +1,5 @@
 package co.com.ps.C23A.domain;
-// Clases necesarias para trabajar con JPA
+// Clases necesarias para trabajar con JPA //
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,12 +7,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.time.LocalTime;
-// Anotaciones Lombok
+// Anotaciones Lombok //
 @Data //Genera get and set
 @NoArgsConstructor //genera constructor sin argumentos
 @AllArgsConstructor //genera constructor con argumentos full
-// Anotaciones JPA
-@Entity //entidad de la base de datos
+// Anotaciones JPA //
+@Entity //entidad de la base de datos //
 @Table(name="products") // que tabla representa en la base de datos.
 @Builder //Patron de diseño
 

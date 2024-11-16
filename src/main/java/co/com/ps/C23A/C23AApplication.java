@@ -9,5 +9,4 @@ public class C23AApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(C23AApplication.class, args);
 	}
-
 }

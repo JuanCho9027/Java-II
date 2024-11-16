@@ -1,21 +1,10 @@
 package co.com.ps.C23A.repository;
 
-
 import co.com.ps.C23A.domain.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
 import java.util.Optional;
 
-public interface CategoryRepository {
-    Optional<Category> findById(Long idCategory);
-
+public interface CategoryRepository extends JpaRepository<Category, Long> {
     Optional<Category> findByCategoryName(String name);
-
-    List<Category> findAll();
-
-    Category save(Category category);
-
-    boolean existsById(Long categoryId);
-
-    void deleteById(Long idCategory);
 }
